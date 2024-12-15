@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: iframe-problem
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/iframe       
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update #create-drop
+    properties:      
+      hibernate:
+        generate_statistics: false
+        format_sql: true        
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  sql:
+    init:
+      schema-locations: 
+      - classpath:/data/schema.sql
+      data-locations:
+      - classpath:/data/init.sql

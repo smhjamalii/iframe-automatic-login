@@ -1,0 +1,1 @@
+insert into USERS (ID, FULLNAME, USERNAME, EMAIL, PASSWORD) VALUES (1, 'ALI', 'ali', 'ali@iran.ir', '$2a$10$VOgx.OxPdW1kzGOoDfeRq.bzazQunLuFMV2bDjqeVoOfDbWlNWkYO');
